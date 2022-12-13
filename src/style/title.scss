@@ -1,0 +1,16 @@
+@import '../style/variables.scss';
+
+@font-face {
+    font-family: 'laCartoonerie(RUS BY LYAJKA)';
+    src: url("../../public/fonts/lacartoonerie.ttf");
+}
+
+.title {
+
+    font-family: 'laCartoonerie(RUS BY LYAJKA)', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: $main-color-text;
+}

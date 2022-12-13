@@ -1,0 +1,75 @@
+@import '../../style/variables.scss';
+
+.formMessage {
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.form-message-input {
+    .MuiFormControl-root {
+        width: 100%;
+        margin-top: 32px;
+        color: #A3A4A6;
+
+        .MuiInputBase-root {
+            .MuiInputBase-input {
+                padding: 11px;
+            }
+        }
+
+        .MuiInputLabel-root {
+            top: -5px;
+        }
+
+        .MuiInputBase-multiline {
+            padding: 0;
+        }
+
+    }
+
+    .disabled {
+        .MuiOutlinedInput-notchedOutline {
+            border: none;
+        }
+
+        .MuiInputBase-root {
+            .MuiInputBase-input {
+                padding: 0 11px 0 14px;
+            }
+        }
+
+        .MuiInputLabel-root {
+            color: $main-color-text;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+    }
+
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled,
+    .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled,
+    .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+        opacity: 1;
+        -webkit-text-fill-color: $main-color-text;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
+
+.form-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 48px;
+
+}

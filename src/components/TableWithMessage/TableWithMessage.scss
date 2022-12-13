@@ -1,0 +1,90 @@
+@import '../../style/variables.scss';
+
+.header {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+
+    .search-fieled {
+        width: 502px;
+        margin-top: 24px;
+    }
+
+    .date-from {
+        width: 237px;
+    }
+
+    .MuiOutlinedInput-root {
+        height: 40px;
+
+    }
+
+    .MuiFormLabel-root {
+        color: $main-color-text;
+        position: relative;
+        top: 16px;
+    }
+
+    .MuiTextField-root {
+        margin-right: 24px;
+    }
+
+}
+
+.MuiTable-root {
+    position: absolute;
+    left: 0;
+    margin-top: 24px;
+
+    .MuiTableHead-root {
+        .MuiTableRow-head {
+            .MuiTableCell-head {
+                font-weight: 700;
+                line-height: 1;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .MuiTableCell-root {
+        line-height: 1;
+        font-size: 14px;
+    }
+
+}
+
+
+
+.MuiPagination-root {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 24px;
+    margin-top: 24px;
+
+
+    .MuiPagination-ul {
+        li {
+            .MuiButtonBase-root.Mui-selected {
+                background-color: $main-color;
+            }
+        }
+    }
+}
+
+.header-date-picker {
+    display: flex;
+
+    .date-picker-wrapper {
+        position: relative;
+
+        .clear-date-peacker {
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            color: red;
+        }
+    }
+}
